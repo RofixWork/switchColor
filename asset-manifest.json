@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/switchColor/static/css/main.412346f2.chunk.css",
+    "main.js": "/switchColor/static/js/main.d0081d23.chunk.js",
+    "main.js.map": "/switchColor/static/js/main.d0081d23.chunk.js.map",
+    "runtime-main.js": "/switchColor/static/js/runtime-main.608dd350.js",
+    "runtime-main.js.map": "/switchColor/static/js/runtime-main.608dd350.js.map",
+    "static/js/2.ee41f74d.chunk.js": "/switchColor/static/js/2.ee41f74d.chunk.js",
+    "static/js/2.ee41f74d.chunk.js.map": "/switchColor/static/js/2.ee41f74d.chunk.js.map",
+    "index.html": "/switchColor/index.html",
+    "precache-manifest.0b581fbad6a15b616fd1d183884bb367.js": "/switchColor/precache-manifest.0b581fbad6a15b616fd1d183884bb367.js",
+    "service-worker.js": "/switchColor/service-worker.js",
+    "static/css/main.412346f2.chunk.css.map": "/switchColor/static/css/main.412346f2.chunk.css.map",
+    "static/js/2.ee41f74d.chunk.js.LICENSE.txt": "/switchColor/static/js/2.ee41f74d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.608dd350.js",
+    "static/js/2.ee41f74d.chunk.js",
+    "static/css/main.412346f2.chunk.css",
+    "static/js/main.d0081d23.chunk.js"
+  ]
+}
