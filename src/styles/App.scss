@@ -1,0 +1,283 @@
+@import './vars';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $mainFontFamily;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+//banner
+.banner {
+    height: 100vh;
+    background-color: crimson;
+    color: white;
+    &__text{
+        width: 600px;
+
+    }
+    h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 65px;
+    }
+    p{
+        font-size: 17px;
+        line-height: 2;
+        margin: 20px 0;
+    }
+    div {
+        button{
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px 15px;
+            outline: 0;
+            border: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: white;
+            color: crimson;
+            border: 2px solid white;
+            transition: all .4s;
+            border-radius: 5px;
+            &:nth-child(2) {
+                margin-left: 14px;
+                background-color: crimson;
+                color: white;
+                border: 2px solid white;
+                &:hover {
+                    background-color: white;
+                    color: crimson;
+                    border: 2px solid white;
+                }
+            }
+            
+        }
+    }
+}
+.banner.theme-crimson {
+    height: 100vh;
+    background-color: crimson;
+    color: white;
+
+    &__text {
+        width: 600px;
+
+    }
+
+    h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 65px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 2;
+        margin: 20px 0;
+    }
+
+    div {
+        button {
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px 15px;
+            outline: 0;
+            border: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: white;
+            color: crimson;
+            border: 2px solid white;
+            transition: all .4s;
+            border-radius: 5px;
+
+            &:nth-child(2) {
+                margin-left: 14px;
+                background-color: crimson;
+                color: white;
+                border: 2px solid white;
+
+                &:hover {
+                    background-color: white;
+                    color: crimson;
+                    border: 2px solid white;
+                }
+            }
+
+        }
+    }
+}
+.banner.theme-dark {
+    height: 100vh;
+    background-color: black;
+    color: white;
+
+    &__text {
+        width: 600px;
+
+    }
+    h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 65px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 2;
+        margin: 20px 0;
+    }
+
+    div {
+        button {
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px 15px;
+            outline: 0;
+            border: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+            transition: all .4s;
+            border-radius: 5px;
+
+            &:nth-child(2) {
+                margin-left: 14px;
+                background-color: black;
+                color: white;
+                border: 2px solid white;
+
+                &:hover {
+                    background-color: white;
+                    color: black;
+                    border: 2px solid white;
+                }
+            }
+
+        }
+    }
+}
+.banner.theme-light{
+    height: 100vh;
+    background-color: white;
+    color: black;
+
+    &__text {
+        width: 600px;
+
+    }
+
+    h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 65px;
+    }
+
+    p {
+        font-size: 17px;
+        line-height: 2;
+        margin: 20px 0;
+    }
+
+    div {
+        button {
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px 15px;
+            outline: 0;
+            border: 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: black;
+            color: white;
+            border: 2px solid black;
+            transition: all .4s;
+            border-radius: 5px;
+
+            &:nth-child(2) {
+                margin-left: 14px;
+                background-color: white;
+                color: black;
+                border: 2px solid black;
+
+                &:hover {
+                    background-color: black;
+                    color: white;
+                    border: 2px solid black;
+                }
+            }
+
+        }
+    }
+}
+//banner
+//menu
+.menu {
+    position: fixed;
+    top: 0;
+    left:-453px;
+    background-color: rgba($color: #fff, $alpha: 1.0);
+    border-right: 2px solid #ccc;
+    height: 100vh;
+    width: 450px;
+    padding: 20px;
+    transition: left .4s;
+    &.active {
+        left: 0;
+    }
+    .icon {
+        position: absolute;
+        top: 20px;
+        right: -31px;
+        
+        cursor: pointer;
+        i{
+            line-height: 30px;
+            background-color: black;
+            color: white;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-top-right-radius: 5px;
+        }
+    }
+    h2 {
+        font-size: 25px;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    ul {
+        display: flex;
+        background-color: #ccc;
+        justify-content: center;
+        border-radius: 5px;
+        padding: 10px;
+        li{
+            width: 30px;
+            height: 30px;
+            margin-left: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    #theme-crimson {background-color: crimson;}
+    #theme-light {background-color: white;}
+
+    #theme-dark {background-color: black;}
+}
+//menu
